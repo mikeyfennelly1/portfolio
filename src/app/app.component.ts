@@ -5,11 +5,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { OneComponent } from './components/one/one.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, HeroComponent, NavbarComponent, OneComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, HeroComponent, NavbarComponent, OneComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
