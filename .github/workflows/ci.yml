@@ -27,7 +27,7 @@ jobs:
       run: |
         git fetch origin github-pages
         git checkout github-pages
-        git touch hello.txt
+        touch hello.txt
         git add --all
         git commit -am "added hello.txt"
         git push origin github-pages
