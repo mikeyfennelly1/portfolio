@@ -15,5 +15,5 @@ jobs:
     # - uses: actions/checkout@v2
 
     - name: Build Angular file
-      run: echo "i am the mike"
+      run: ls -al
       # uses: 'npm run build'
