@@ -25,6 +25,7 @@ jobs:
 
     - name: Test GH Token Perms
       run: |
+        env
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
         git fetch origin github-pages
