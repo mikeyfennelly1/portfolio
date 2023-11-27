@@ -14,6 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build Angular file
-      run: ls -al
-      # uses: 'npm run build'
+    - name: Build webpage
+      run: 'npm run build'
