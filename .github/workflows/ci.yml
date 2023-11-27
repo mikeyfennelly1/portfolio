@@ -3,7 +3,7 @@ name: Angular CI with Webpack
 on:
   push:
     branches: [master]
-  pull_requeest:
+  pull_request:
     branches: [master]
 
 jobs:
