@@ -1,0 +1,19 @@
+name: Angular CI with Webpack
+
+on:
+  push:
+    branches: [master]
+  pull_requeest:
+    branches: [master]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # - uses: actions/checkout@v2
+
+    - name: Build Angular file
+      run: echo "i am the mike"
+      # uses: 'npm run build'
