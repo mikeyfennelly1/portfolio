@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with: 
-        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     # - name: Install NPM packages
     #   run: npm install
