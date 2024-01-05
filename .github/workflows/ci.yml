@@ -3,8 +3,6 @@ name: Build portfolio website
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
 
 jobs:
   build:
@@ -32,7 +30,7 @@ jobs:
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
         cd github-pages
-        touch hello.txt
+        npm install
+        ng build
         git add --all
-        git commit -am "added hello.txt"
         git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
