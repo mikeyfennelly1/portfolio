@@ -33,4 +33,5 @@ jobs:
         touch hello.txt
         git add --all
         git commit -am "added hello.txt"
+        echo "****"
         git push origin github-pages
