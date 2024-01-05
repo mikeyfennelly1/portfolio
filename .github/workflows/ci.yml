@@ -34,4 +34,6 @@ jobs:
         git add --all
         git commit -am "added hello.txt"
         echo "****"
-        git push origin github-pages
+        git push https://$GITHUB_TOKEN@github.com/mikeyfennelly1/portfolio/ github-pages
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
