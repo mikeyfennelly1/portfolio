@@ -15,22 +15,26 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # - name: Install NPM packages
-    #   run: npm install
+    - name: Install NPM packages
+      run: npm install
 
-    # - name: Install Angular CLI
-    #   run: npm install -g @angular/cli
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
 
-    # - name: Build webpage
-    #   run: npm run build
+    - name: Build webpage
+      run: npm run build
 
-    - name: Test GH Token Perms
+    - name: Clone github-pages branch
       run: |
         git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
+   
+    - name: Copy website to github-pages branch
+      run: cp ./dist/portfolio/browser github-pages
+
+    - name: Push github-pages branch changes
+      run: |
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
         cd github-pages
-        npm install
-        ng build
         git add --all
         git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
