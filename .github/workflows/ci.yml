@@ -11,6 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env: 
+      GHA_PAT: ${{ secrets.GHA_PAT }}
+
     steps:
     - uses: actions/checkout@v2
 
@@ -34,6 +37,4 @@ jobs:
         git add --all
         git commit -am "added hello.txt"
         echo "****"
-        git push https://$GITHUB_TOKEN@github.com/mikeyfennelly1/portfolio/ github-pages
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
