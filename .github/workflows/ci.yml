@@ -28,13 +28,11 @@ jobs:
 
     - name: Test GH Token Perms
       run: |
-        env
+        git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
         git config --global user.email "mikeyp.fennelly@gmail.com"
         git config --global user.name "Mikey Fennelly"
-        git fetch origin github-pages
-        git checkout github-pages
+        cd github-pages
         touch hello.txt
         git add --all
         git commit -am "added hello.txt"
-        echo "****"
         git push https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
