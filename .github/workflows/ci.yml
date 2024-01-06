@@ -22,7 +22,7 @@ jobs:
       run: npm install -g @angular/cli
 
     - name: Build webpage
-      run: npm run build
+      run: ng build --verbose
 
     - name: Clone github-pages branch
       run: |
