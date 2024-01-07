@@ -9,7 +9,7 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: 20.10.0-alpine
+      image: node:20.10.0-alpine
 
     env: 
       GHA_PAT: ${{ secrets.GHA_PAT }}
