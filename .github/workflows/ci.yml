@@ -21,7 +21,9 @@ jobs:
       run: |
         npm --version
         node --version
-        git --version
+      
+    - name: Install Git
+      run: sudo apt-get install git
 
     - name: Install NPM packages
       run: npm install
