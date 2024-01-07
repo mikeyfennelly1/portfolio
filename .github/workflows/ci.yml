@@ -35,14 +35,14 @@ jobs:
       run: npm install -g @angular/cli
 
     - name: Build webpage
-      run: ng build --verbose
+      run: ng build
 
     - name: Clone github-pages branch
       run: |
         git clone -b github-pages https://$GHA_PAT@github.com/mikeyfennelly1/portfolio/ github-pages
    
     - name: Copy website to github-pages branch
-      run: cp ./dist/portfolio/browser github-pages
+      run: cp -ra ./dist/portfolio/browser/* github-pages
 
     - name: Push github-pages branch changes
       run: |
