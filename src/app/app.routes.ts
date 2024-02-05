@@ -15,7 +15,7 @@ export const routes: Routes = [
         component: BlogPageComponent,
     },
     {
-        path: 'blog/machine-learning-demistified',
+        path: 'blog/will-i-go-to-university',
         component: MachineLearningDemistifiedComponent,
     }
 ];
