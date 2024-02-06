@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/landing-page/home/home.component';
 import { BlogPageComponent } from './components/blog-page/blog-page.component';
 
 @Component({

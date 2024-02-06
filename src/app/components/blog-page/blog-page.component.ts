@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
-import { Blog1Component } from '../blog1/blog1.component';
+import { NavbarComponent } from '../misc/navbar/navbar.component';
+import { FooterComponent } from '../misc/footer/footer.component';
+import { Blog1Component } from './blog-thumbnail/blog1.component';
 
 @Component({
   selector: 'app-blog-page',
