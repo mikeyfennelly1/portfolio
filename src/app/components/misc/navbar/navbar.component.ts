@@ -9,17 +9,22 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.sass'
 })
 export class NavbarComponent {
-  projectsScroll() {
+  softwareProjectsScroll() {
     window.scroll({ 
-      top: 850, 
+      top: 1300, 
       behavior: 'smooth' 
   });
 }
-
-articleScroll() {
-  window.scroll({ 
-    top: 1200, 
-    behavior: 'smooth' 
-});
-}
+  contentCreationScroll() {
+    window.scroll({ 
+      top: 3200, 
+      behavior: 'smooth' 
+    });
+  }
+    articleScroll() {
+      window.scroll({ 
+        top: 4000, 
+        behavior: 'smooth' 
+    });
+  }
 }
