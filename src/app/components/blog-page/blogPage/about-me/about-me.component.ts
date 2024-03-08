@@ -4,12 +4,12 @@ import { NavbarComponent } from '../../../misc/navbar/navbar.component';
 import { FooterComponent } from '../../../misc/footer/footer.component';
 
 @Component({
-  selector: 'app-machine-learning-demistified',
+  selector: 'app-about-me',
   standalone: true,
   imports: [CommonModule, NavbarComponent, FooterComponent],
-  templateUrl: './machine-learning-demistified.component.html',
-  styleUrl: './machine-learning-demistified.component.sass'
+  templateUrl: './about-me.component.html',
+  styleUrl: './about-me.component.sass'
 })
-export class MachineLearningDemistifiedComponent {
+export class AboutMeComponent {
 
 }
