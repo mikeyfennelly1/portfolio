@@ -14,7 +14,7 @@ export const routes: Routes = [
         component: BlogPageComponent,
     },
     {
-        path: 'blog/about-me',
+        path: 'about-me',
         component: AboutMeComponent,
     },
     {
