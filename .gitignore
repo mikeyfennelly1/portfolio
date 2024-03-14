@@ -37,6 +37,9 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+./Adobe Premiere Pro Auto-Save/
+./How_I_Made_CharlemagneDB.prproj
+./Adobe Premiere Pro Auto-Save/How_I_Made_CharlemagneDB--a6e4e431-f6a6-bda0-4588-19ae98997c20-2024-03-14_11-09-00.prproj
 
 # System files
 .DS_Store
