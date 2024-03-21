@@ -10,11 +10,12 @@ import { BeyondGoodAndEvilComponent } from './beyondGoodAndEvil/beyondGoodAndEvi
 import { OglivyOnAdvertisingComponent } from './oglivyOnAdvertising/oglivyOnAdvertising.component';
 import { TheBoronLettersComponent } from './theBoronLetters/theBoronLetters.component';
 import { AtomicHabitsComponent } from './atomicHabits/atomicHabits.component';
+import { TableOfContentsComponent } from './bookshelf-features/table-of-contents/table-of-contents.component';
 
 @Component({
   selector: 'app-bookshelf',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, FooterComponent, SteveJobsComponent, ElonMuskComponent, ThinkingFastAndSlowComponent, BeyondGoodAndEvilComponent, OglivyOnAdvertisingComponent, TheBoronLettersComponent, AtomicHabitsComponent],
+  imports: [CommonModule, NavbarComponent, FooterComponent, SteveJobsComponent, ElonMuskComponent, ThinkingFastAndSlowComponent, BeyondGoodAndEvilComponent, OglivyOnAdvertisingComponent, TheBoronLettersComponent, AtomicHabitsComponent, TableOfContentsComponent],
   templateUrl: './bookshelf.component.html',
   styleUrl: './bookshelf.component.sass'
 })
