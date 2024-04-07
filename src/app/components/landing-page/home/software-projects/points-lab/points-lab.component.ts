@@ -26,8 +26,8 @@ export class PointsLabComponent {
   ];
   linkToSourceCode: string = "https://github.com/mikeyfennelly1/points-lab";
   linkToVideo: string = "https://youtu.be/t_BXC6XJVSE";
-  linkToLiveSite: string = "gdgh"
-  pathToThumbnail: string = "../../../assets/images/pointsLabThumbnail.png"
+  linkToLiveSite: string = "https://mikeyfennelly1.github.io/points-lab/";
+  pathToThumbnail: string = "../../../assets/images/pointsLabThumbnail.png";
 }
 interface itemTechnologiesObject {
   name: string;

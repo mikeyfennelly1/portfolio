@@ -16,14 +16,14 @@ export class PortfolioItemComponent {
   @Input ({ required: true }) itemTechnologies!: Array<itemTechnologiesObject>;
   @Input ({ required: true }) linkToSourceCode!: string;
   @Input ({ required: true }) linkToVideo!: string;
-  @Input ({ required: false }) linkToLiveSite!: string;
+  @Input ({ required: true }) linkToLiveSite!: string;
   @Input ({ required: true }) pathToThumbnail!: string;
   
   pathToGithubLogoImg: string = "../../../assets/images/githubLogo.png"
   pathToExternalSiteLogoImg: string = "../../../assets/images/OOjs_UI_icon_external-link-ltr-invert.svg.png"
   pathToYouTubeImg: string = "../../../../../../assets/images/youtubeLogo 1 (3).png"
-
 }
+
 interface itemTechnologiesObject {
   name: string;
   link: string
