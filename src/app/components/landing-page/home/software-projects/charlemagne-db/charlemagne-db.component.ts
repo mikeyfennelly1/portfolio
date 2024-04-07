@@ -23,8 +23,9 @@ export class CharlemagneDBComponent {
     { name: "Firebase", link: "https://firebase.google.com/" },
   ];
   linkToSourceCode: string = "https://github.com/mikeyfennelly1/CharlamagneDB";
-  linkToVideo: string = "https://youtu.be/xvX29_NZPAQ";
-  pathToThumbnail: string = "../../../assets/images/charlemagneDBThumbnail.png"
+  linkToVideo: string = "https://youtu.be/0XHZatftaTI";
+  pathToThumbnail: string = "../../../assets/images/charlemagneDBThumbnail.png";
+  linkToLiveSite: string = "https://mikeyfennelly1.github.io/CharlamagneDB/";
 }
 interface itemTechnologiesObject {
   name: string;

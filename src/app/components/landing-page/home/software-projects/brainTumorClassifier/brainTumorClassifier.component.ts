@@ -20,8 +20,8 @@ export class BrainTumorClassifierComponent {
     { name: "Matplotlib", link: "https://matplotlib.org/" },
     { name: "Pandas", link: "https://pandas.pydata.org/" },
   ];
-  linkToSourceCode: string = "ExampleSourceCode";
-  linkToVideo: string = "ExampleLinkToVideo";
+  linkToSourceCode: string = "https://github.com/mikeyfennelly1/brainTumorClassifier";
+  linkToVideo: string = "https://youtu.be/xvX29_NZPAQ";
   pathToThumbnail: string = "../../../../../../assets/images/brainScanThumbnail.png"
 }
 interface itemTechnologiesObject {

@@ -24,8 +24,9 @@ export class PointsLabComponent {
     { name: "Adobe Illustrator", link: "https://www.adobe.com/ie/products/illustrator/" },
     { name: "Figma", link: "https://www.figma.com/" },
   ];
-  linkToSourceCode: string = "ExampleSourceCode";
-  linkToVideo: string = "ExampleLinkToVideo";
+  linkToSourceCode: string = "https://github.com/mikeyfennelly1/points-lab";
+  linkToVideo: string = "https://youtu.be/t_BXC6XJVSE";
+  linkToLiveSite: string = "gdgh"
   pathToThumbnail: string = "../../../assets/images/pointsLabThumbnail.png"
 }
 interface itemTechnologiesObject {
