@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './charlemagne-db.component.sass'
 })
 export class CharlemagneDBComponent {
-
+  itemTitle: string = "CharlemagneDB";
 }

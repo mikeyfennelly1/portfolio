@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StatmannComponent } from './statmann.component';
+import { PortfolioItemComponent } from './portfolio-item.component';
 
-describe('StatmannComponent', () => {
-  let component: StatmannComponent;
-  let fixture: ComponentFixture<StatmannComponent>;
+describe('PortfolioItemComponent', () => {
+  let component: PortfolioItemComponent;
+  let fixture: ComponentFixture<PortfolioItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StatmannComponent]
+      imports: [PortfolioItemComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(StatmannComponent);
+    fixture = TestBed.createComponent(PortfolioItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
