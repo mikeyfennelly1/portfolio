@@ -1,0 +1,47 @@
+<div class="container outermostContainer">
+    <!-- Left Column -->
+    <div class="column columnLeft">
+        <div class="info">
+            <h1 style="font-family: 'fieldwork'" class="mt-5">{{itemTitle}}</h1>
+            <h5 class="me-5 lh-base my-4">{{itemDescription}}</h5>
+            <div style="display: flex; flex-wrap: wrap;">
+                <a *ngFor="let item of this.itemTechnologies" href="{{ item.link }}">
+                        <p style="display: inline; line-height: 40px;">{{ item.name }}</p>
+                </a>
+            </div>
+
+            <div class="linkAndIconContainerParent">
+                <div *ngIf="this.linkToLiveSite !== '/'" class="linkAndIconContainer">
+                    <a target="_blank" href="{{linkToLiveSite}}">
+                        <img class="icons" src="{{pathToExternalSiteLogoImg}}" alt="">
+                        <h5 style="margin-left: 4rem;" class="linkStyling">Link to website</h5>
+                        <br>
+                    </a>
+                </div>
+                <div class="linkAndIconContainer">
+                    <a target="_blank" href="{{linkToSourceCode}}">
+                            <img class="icons" src="{{pathToGithubLogoImg}}" alt="">
+                        <h5 class="linkStyling">Source Code</h5>
+                    </a>
+                </div>
+                <div class="linkAndIconContainer">
+                    <a target="_blank" href="{{linkToVideo}}">
+                        <img class="icons" src="{{pathToYouTubeImg}}" alt="">
+                        <h5 class="linkStyling">Video on how I made it</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column columnRight">
+        <div>
+            <a target="_blank" href="{{ linkToLiveSite }}">
+                <img class="thumbnail" src="{{pathToThumbnail}}" alt="">
+            </a>
+        </div>
+    </div>
+
+
+</div>
